@@ -16,6 +16,8 @@ table. Each customer has an API key and only ever sees their own portfolios.
 - `GET /health`: database reachable, how many flood polygons and coverage areas are loaded.
 - A React page with a Leaflet map and a results table, sorted worst risk first.
 
+![Single address lookup](docs/screenshot-lookup.png)
+
 Every answer is one of six levels, and the difference between the last three matters:
 
 | Level | Meaning |
