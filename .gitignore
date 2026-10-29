@@ -1,0 +1,17 @@
+.env
+.sync/
+data/*
+!data/README.md
+!data/zones.json
+
+# Python
+.venv/
+__pycache__/
+.pytest_cache/
+
+# Node
+node_modules/
+frontend/dist/
+
+*_log.txt
+.DS_Store

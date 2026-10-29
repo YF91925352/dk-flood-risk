@@ -1,0 +1,20 @@
+{
+  "source": "Miljøstyrelsen, MiljøGIS WFS klima:lavningermedattributter (bluespots / low-lying depressions)",
+  "coverage": {
+    "name": "Central Copenhagen (EPSG:25832 bbox 716000,6168000 – 732000,6184000)",
+    "bbox": [716000, 6168000, 732000, 6184000]
+  },
+  "layers": [
+    {
+      "file": "lavningermedattributter.zip",
+      "classify": {
+        "field": "opfyld_mm",
+        "rules": [
+          {"max": 15,  "risk_level": 3, "scenario": "Depression fills with ≤15 mm rain (one cloudburst)"},
+          {"max": 30,  "risk_level": 2, "scenario": "Depression fills with ≤30 mm rain (double cloudburst)"},
+          {"max": 100, "risk_level": 1, "scenario": "Depression fills with ≤100 mm rain (extreme event)"}
+        ]
+      }
+    }
+  ]
+}
